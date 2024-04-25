@@ -18,6 +18,16 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # 关闭对模型修改的
 db = SQLAlchemy(app)
 
 
+
+@app.cli.command()  # 注册为命令，可以传入 name 参数来自定义命令
+@click.option('--drop', is_flag=True, help='Create after drop.')  # 设置选项
+def initdb(drop):
+    """Initialize the database."""
+    if drop:  # 判断是否输入了选项
+        db.drop_all()
+    db.create_all()
+    click.echo('Initialized database.')  # 输出提示信息
+
 @app.cli.command()
 def forge():
     """Generate fake data."""
@@ -48,19 +58,6 @@ def forge():
     click.echo('Done.')
 
 
-
-@app.cli.command()  # 注册为命令，可以传入 name 参数来自定义命令
-@click.option('--drop', is_flag=True, help='Create after drop.')  # 设置选项
-def initdb(drop):
-    """Initialize the database."""
-    if drop:  # 判断是否输入了选项
-        db.drop_all()
-    db.create_all()
-    click.echo('Initialized database.')  # 输出提示信息
-
-
-
-
 class User(db.Model):  # 表名将会是 user（自动生成，小写处理）
     id = db.Column(db.Integer, primary_key=True)  # 主键
     name = db.Column(db.String(20))  # 名字
@@ -70,8 +67,17 @@ class Book(db.Model):  # 表名将会是 book
     title = db.Column(db.String(60))  # 标题
     author = db.Column(db.String(10))  # 作者
 
+
+@app.context_processor
+def inject_user():  # 函数名可以随意修改
+    user = User.query.first()
+    return dict(user=user)  # 需要返回字典，等同于 return {'user': user}
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 @app.route('/')
 def index():
-    user = User.query.first()
     books = Book.query.all()
-    return render_template('index.html', user=user, books=books)
+    return render_template('index.html',books=books)

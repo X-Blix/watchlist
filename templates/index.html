@@ -1,32 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
-    <meta charset="utf-8">
-    <title>{{ name }}'s readlist</title>
-</head>
+{% extends 'base.html' %}
 
+{% block content %}
 
-<body>
+<p>{{ books|length }} Titles</p>
 
-    <h2>{{ user.name }}'s readlist</h2>
-    <!-- {# 使用 length 过滤器获取 movies 变量的长度 #} -->
-    <p>{{ books|length }} Titles</p>
-    <ul class = "book-list">
-        {% for book in books %}  
-        <!-- {# 迭代 books 变量 #} -->
-        <li>{{ book.title }} - {{ book.author }}</li>  
-        <!-- {# 等同于 book['title'] #} -->
-        {% endfor %}  
-        <!-- {# 使用 endfor 标签结束 for 语句 #} -->
-    </ul>
+<ul class = "book-list">
+    {% for book in books %}  
+        
+    <li>{{ book.title }} - {{ book.author }}
+        <span class="float-right">
+            <span class="float-right">
+                <a class="read" href="https://book.douban.com/subject_search?search_text={{ book.title }}" target="_blank" title="Find this book on douban">Book</a>
+            </span>
+    </li>  
+      
+    {% endfor %}  
+        
+</ul>
     <img alt="pic1" class = "pic1" src="{{ url_for('static', filename='images/pic1.jpg') }}">
     <img alt="pic2" class="pic2" src="{{ url_for('static', filename='images/pic2.jpg') }}">
     <img alt="pic3" class = "pic1" src="{{ url_for('static', filename='images/pic3.jpg') }}">
     <img alt="pic4" class="pic2" src="{{ url_for('static', filename='images/pic4.jpg') }}">
-    <footer>
-        <small>&copy; 2018-2024 <a href="https://book.douban.com/">豆瓣读书</a></small>
-    </footer>
-
-</body>
-</html>
+    {% endblock %}

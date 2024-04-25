@@ -37,10 +37,54 @@ footer {
     background-color: #f8f9fa;
 }
 
+.float-right {
+    float: right;
+}
 
 .pic1,.pic2,pic3,pic4 {
     /* display: block; */
     margin: 0 auto;
     height: 180px;
     width: 140px;
+}
+
+
+/* 导航栏 */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 9px 12px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+
+.float-right {
+    float: right;
+}
+
+.read {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    background: #F5C518;
+    border-radius: 5px;
+    padding: 3px 5px;
 }
