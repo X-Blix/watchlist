@@ -6,28 +6,33 @@
 
 </br>
 
+{% if current_user.is_authenticated %}
 <form method="post">
     Name <input type="text" name="title" autocomplete="off" required>
     Author <input type="text" name="author" autocomplete="off" required>
     <input class="btn" type="submit" name="submit" value="Add">
 </form>
+{% endif %}
 
 <ul class = "book-list">
     {% for book in books %}  
     <li>{{ book.title }} - {{ book.author }}
         <span class="float-right">
             <span class="float-right">
-                
+                {% if current_user.is_authenticated %}
                 <a class="read" href="https://book.douban.com/subject_search?search_text={{ book.title }}" target="_blank" title="Find this book on douban">Book</a>
 
                 <a class="btn" href="{{ url_for('edit', book_id=book.id) }}">Edit</a>
-                <form class="inline-form" method="post" action="{{ url_for('.delete', book_id=book.id) }}">
+
+                <form class="inline-form" method="post" action="{{ url_for('delete', book_id=book.id) }}">
                     <input class="btn" type="submit" name="delete" value="Delete" onclick="return confirm('Are you sure?')">
                 </form>
+                {% endif %}
   
             </span>
+        </span>
+    </li>
 
-    </li>  
     {% endfor %}  
 
     <p class="p">total :{{ books|length }} Titles</p>

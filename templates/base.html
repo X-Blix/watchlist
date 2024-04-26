@@ -3,12 +3,12 @@
 <head>
     {% block head %}
     <meta charset="utf-8">
-    <!-- 设置页面的视口，让页面根据设备的宽度来自动缩放页面，这样会让移动设备拥有更好的浏览体验： -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ user.name }}'s readlist</title>    
+    <title>{{ user.name }}'s Watchlist</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
-    {% endblock %}   
+    {% endblock %}
 </head>
+
 
 <body>
 
@@ -24,6 +24,12 @@
     <nav>
         <ul>
             <li><a href="{{ url_for('index') }}">Home</a></li>
+            {% if current_user.is_authenticated %}
+            <li><a href="{{ url_for('settings') }}">Settings</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            {% endif %}
         </ul>
     </nav>
 
