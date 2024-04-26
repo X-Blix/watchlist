@@ -16,7 +16,7 @@ footer {
 
 
 
-/* 电影列表 */
+/* 列表 */
 .book-list {
     list-style-type: none;
     padding: 0;
@@ -79,6 +79,10 @@ nav li a:hover {
     float: right;
 }
 
+.p{
+    float: right;
+}
+
 .read {
     font-size: 12px;
     font-weight: bold;
@@ -87,4 +91,56 @@ nav li a:hover {
     background: #F5C518;
     border-radius: 5px;
     padding: 3px 5px;
+}
+
+
+/* 输入提交按钮 */
+input[type=submit] {
+    font-family: inherit;
+}
+
+input[type=text] {
+    width: 200px;
+    border: 1px solid #ddd;
+}
+
+input[name=author] {
+    width: 200px;
+}
+
+/* 按钮并排显示 */
+
+.inline-form {
+    display: inline;
+}
+
+.btn {
+    font-size: 12px;
+    padding: 3px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+
+/* 提示消息增加样式 */
+.alert {
+    position: relative;
+    padding: 7px;
+    margin: 7px 0;
+    border: 1px solid transparent;
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    border-radius: 5px;
 }
