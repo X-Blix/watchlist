@@ -5,94 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="962a5bec-5a56-43e5-af21-a72b47eb201a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage-7.5.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage-7.5.0.dist-info/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage-7.5.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage-7.5.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage-7.5.0.dist-info/REQUESTED" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage-7.5.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage-7.5.0.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage-7.5.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/annotate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/bytecode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/cmdline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/collector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/context.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/control.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/debug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/disposition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/execfile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/html.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/htmlfiles/coverage_html.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/htmlfiles/favicon_32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/htmlfiles/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/htmlfiles/keybd_closed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/htmlfiles/keybd_open.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/htmlfiles/pyfile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/htmlfiles/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/htmlfiles/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/inorout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/jsonreport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/lcovreport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/misc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/multiproc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/numbits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/phystokens.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/plugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/plugin_support.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/pytracer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/regions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/report_core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/results.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/sqldata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/sqlitedb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/sysmon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/templite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/tomlconfig.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/tracer.cp310-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/tracer.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/coverage/xmlreport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Scripts/coverage-3.10.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Scripts/coverage.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/Scripts/coverage3.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_watchlist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/commands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/templates/errors/400.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/templates/errors/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flaskenv" beforeDir="false" afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/aaa.ico" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/aaa.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/pic1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/images/pic1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/pic2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/images/pic2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/pic3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/images/pic3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/pic4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/images/pic4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/errors/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchlist/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
