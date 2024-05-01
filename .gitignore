@@ -4,3 +4,5 @@ __pycache__
 .Ds_Store
 .env
 *.db
+htmlcov/
+.coverage
